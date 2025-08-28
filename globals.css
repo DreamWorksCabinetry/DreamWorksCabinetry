@@ -1,0 +1,25 @@
+/* Minimal styles (no Tailwind build step to keep it simple) */
+:root { --amber:#fbbf24; --muted:#6b7280; }
+body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:#0f172a; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+header.sticky { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(255,255,255,0.8); border-bottom: 1px solid #e5e7eb; z-index: 30; }
+.btn { display:inline-flex; align-items:center; gap:.5rem; padding:.6rem .9rem; border-radius: 1rem; border:1px solid #e5e7eb; }
+.btn.primary { background:#111827; color:#fff; border-color:#111827; }
+.btn.outline { background:#fff; }
+.tag { display:inline-flex; align-items:center; font-size:.75rem; padding:.2rem .5rem; border-radius:999px; background:#fffbeb; border:1px solid #fde68a; color:#92400e; }
+.grid { display:grid; gap:1rem; }
+.grid.cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.grid.cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.card { border:1px solid #e5e7eb; border-radius: 1rem; overflow:hidden; background:#fff; }
+.card-content { padding: 1rem; }
+.aspect-4-3 { position: relative; width: 100%; padding-top: 75%; background:#e5e7eb; background-size:cover; background-position:center; }
+footer { border-top:1px solid #e5e7eb; }
+.muted { color: var(--muted); }
+.hero { position:relative; color:#fff; }
+.hero .bg { position:absolute; inset:0; background-size:cover; background-position:center; }
+.hero .overlay { position:absolute; inset:0; background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,.4), rgba(0,0,0,.2)); }
+.hero .inner { position:relative; padding: 6rem 0; }
+.section { padding: 4rem 0; }
+code { background:#f3f4f6; padding:.1rem .3rem; border-radius:.375rem; }
+.gallery-setup { background:#fffbeb; border:1px solid #fde68a; }
